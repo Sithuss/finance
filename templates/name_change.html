@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    NameChange
+{% endblock %}
+
+{% block main %}
+    <form action="/change_name" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" class="form-control mx-auto w-auto" autofocus name="name" placeholder="New name" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Change</button>
+    </form>
+{% endblock %}

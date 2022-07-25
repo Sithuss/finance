@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    DELETE
+{% endblock %}
+
+{% block main %}
+    <div class="mb-3">
+        <p class="danger">You are deleting your account!. If you wish to delete type "I want to delete my account".</p>
+    </div>
+    <form action="/delete" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" class="form-control mx-auto w-auto" placeholder="type" name="delete" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Delete</button>
+    </form>
+{% endblock %}
